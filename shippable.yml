@@ -1,8 +1,8 @@
 deploy:
-  env
+  env:
     - foo=bar
 
-  before_prov:
+     before_prov:
     - echo 'this is happening before provisioning'
     - ls -ltra
 
@@ -13,6 +13,6 @@ deploy:
   on_prov_success: echo 'yay, it worked!'
 
   infra:
-    - terraform: demo
+       - terraform: demo
     
     
