@@ -1,5 +1,5 @@
 deploy:
-  env:
+  env
     - foo=bar
 
   before_prov:
